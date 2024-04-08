@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardBlazor", "OrchardBlazor\OrchardBlazor.csproj", "{D7659969-DA5F-4C9F-A449-DE789E6A79AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTheme.OrchardBlazor", "OrchardCore.Themes\MyTheme.OrchardBlazor\MyTheme.OrchardBlazor.csproj", "{FC608796-CAC6-4594-8BF4-E65B979AB525}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorEnabledModule", "OrchardCore.Modules\BlazorEnabledModule\BlazorEnabledModule.csproj", "{61407DAB-3E63-494E-8328-ADD3CDF93660}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{B2720B19-0845-4B69-A6DD-F31A490B4024}"
+	ProjectSection(SolutionItems) = preProject
+		Build\Dependencies.AspNetCore.props = Build\Dependencies.AspNetCore.props
+		Build\Portal.common.props = Build\Portal.common.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7659969-DA5F-4C9F-A449-DE789E6A79AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7659969-DA5F-4C9F-A449-DE789E6A79AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7659969-DA5F-4C9F-A449-DE789E6A79AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7659969-DA5F-4C9F-A449-DE789E6A79AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC608796-CAC6-4594-8BF4-E65B979AB525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC608796-CAC6-4594-8BF4-E65B979AB525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC608796-CAC6-4594-8BF4-E65B979AB525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC608796-CAC6-4594-8BF4-E65B979AB525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61407DAB-3E63-494E-8328-ADD3CDF93660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61407DAB-3E63-494E-8328-ADD3CDF93660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61407DAB-3E63-494E-8328-ADD3CDF93660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61407DAB-3E63-494E-8328-ADD3CDF93660}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BBBAA78-257D-4B22-907F-6F84101C6025}
+	EndGlobalSection
+EndGlobal

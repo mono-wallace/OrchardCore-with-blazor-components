@@ -1,0 +1,6 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Build properties common to the portal and all modules and themes-->
+  <Import Project="Build\*.props" />
+
+</Project>
