@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrchardCore.Modules\BlazorEnabledModule\BlazorEnabledModule.csproj" />
+    <ProjectReference Include="..\OrchardCore.Themes\MyTheme.OrchardBlazor\MyTheme.OrchardBlazor.csproj" />
+  </ItemGroup>
+
+</Project>

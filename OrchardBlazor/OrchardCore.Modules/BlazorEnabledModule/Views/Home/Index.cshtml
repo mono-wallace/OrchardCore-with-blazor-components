@@ -1,0 +1,11 @@
+﻿<h1>Hello World</h1>
+
+Render the razor component directly
+<br /> &lt;component type=&quot;typeof(Message)&quot; render-mode=&quot;ServerPrerendered&quot; /&gt;
+<br />
+
+@* You can use an Orchard shape tag helper, to render an Orchard Core shape *@
+
+<component type="typeof(Message)" render-mode="ServerPrerendered" />
+
+@* @(await Html.RenderComponentAsync<BlazorEnabledModule.Components.Message>(RenderMode.ServerPrerendered)) *@

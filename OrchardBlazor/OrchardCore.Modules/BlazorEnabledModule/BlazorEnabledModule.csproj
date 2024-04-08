@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Components\Message.razor" />
+    <EmbeddedResource Remove="Components\_Imports.razor" />
+    <EmbeddedResource Remove="Views\Home\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Components\Message.razor" />
+    <Content Include="Components\_Imports.razor" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="6.0.28" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.28" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Analyzers" Version="6.0.28" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.6.0" />
+  </ItemGroup>
+
+</Project>
