@@ -10,7 +10,6 @@ namespace BlazorEnabledModule
         public override void ConfigureServices(IServiceCollection services)
         {
             services.AddServerSideBlazor();
-            
         }
 
         public override void Configure(IApplicationBuilder builder, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)

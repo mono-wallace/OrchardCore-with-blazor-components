@@ -18,8 +18,4 @@
     <PackageReference Include="OrchardCore.ResourceManagement" Version="1.6.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\OrchardCore.Modules\BlazorEnabledModule\BlazorEnabledModule.csproj" />
-  </ItemGroup>
-
 </Project>
