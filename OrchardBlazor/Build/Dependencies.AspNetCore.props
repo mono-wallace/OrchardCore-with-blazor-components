@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+      <AspNetCoreVersion>6.0.3</AspNetCoreVersion>
+      <AspNetCoreTargetFramework>net6.0</AspNetCoreTargetFramework>
+  </PropertyGroup>
+</Project>
