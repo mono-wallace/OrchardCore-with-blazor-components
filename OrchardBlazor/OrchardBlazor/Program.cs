@@ -15,6 +15,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// This is a workaround to make Blazor static contents accessible. See: https://github.com/OrchardCMS/OrchardCore/issues/2966#issuecomment-897105239
 app.UseStaticFiles(new StaticFileOptions
     {
         FileProvider = new ManifestEmbeddedFileProvider(typeof(IServerSideBlazorBuilder).Assembly)
