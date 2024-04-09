@@ -1,0 +1,43 @@
+<!-- 
+  Build properties common to the portal and all modules and themes
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferenceType>Project</ReferenceType>
+    <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+
+    <!--Version -->
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>beta1</VersionSuffix>
+    <VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)-$(BuildNumber)</VersionSuffix>
+    <LangVersion>latest</LangVersion>
+    <Version>1.0.1-dev</Version>
+
+    <!-- Framework info -->
+    <TargetFramework>$(AspNetCoreTargetFramework)</TargetFramework>
+
+    <!-- Product info -->
+    <Authors>Mono Wallace</Authors>
+    <Company></Company>
+    <Product></Product>
+
+    <!-- Common NuGet properties-->
+    <RepositoryUrl></RepositoryUrl>
+    <PackageIcon></PackageIcon>
+
+    <!-- Generate nuget packages-->
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+    <!-- Documentation -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+        
+      <!-- Documentation -->
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+</Project>
+
+
