@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using BlazorEnabledModule.Components
+<!DOCTYPE html>
 <html lang="nl">
     <head>
         <meta charset="utf-8">
@@ -41,7 +42,7 @@
         <script asp-name="jquery" use-cdn="true" at="Foot"></script>
         
         @* It includes the blazor.server.js. You can use Orchard Core resource management for this if you have a Blazor base project  (i.e. adding a "Blazor" resource for this file). *@
-        <script src="_framework/blazor.server.js"></script>
+        <script src="_framework/blazor.web.js"></script>
 
         <resources type="FootScript"/>
     </body>

@@ -1,5 +1,5 @@
 <Project>
   <PropertyGroup>
-      <AspNetCoreTargetFramework>net6.0</AspNetCoreTargetFramework>
+      <AspNetCoreTargetFramework>net8.0</AspNetCoreTargetFramework>
   </PropertyGroup>
 </Project>

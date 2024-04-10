@@ -12,10 +12,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.6.0" />
-    <PackageReference Include="OrchardCore.ContentManagement" Version="1.6.0" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.6.0" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.6.0" />
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.9.0-preview-18170" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.9.0-preview-18170" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.9.0-preview-18170" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.9.0-preview-18170" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\OrchardCore.Modules\BlazorEnabledModule\BlazorEnabledModule.csproj" />
   </ItemGroup>
 
 </Project>

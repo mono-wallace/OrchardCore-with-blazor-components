@@ -5,16 +5,21 @@ using OrchardCore.Modules;
 
 namespace BlazorEnabledModule
 {
+    using BlazorEnabledModule.Components;
+
     public class Startup : StartupBase
     {
         public override void ConfigureServices(IServiceCollection services)
         {
-            services.AddServerSideBlazor();
+            services.AddRazorComponents().AddInteractiveServerComponents();
         }
 
         public override void Configure(IApplicationBuilder builder, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)
         {
-            routes.MapBlazorHub();
+            builder.UseAntiforgery();
+
+            routes.MapRazorComponents<App>()
+                .AddInteractiveServerRenderMode();
 
             routes.MapAreaControllerRoute(
                 name: "Home",
