@@ -1,11 +1,14 @@
 ﻿<h1>Hello World</h1>
 
-Render the razor component directly
-<br /> &lt;component type=&quot;typeof(Message)&quot; render-mode=&quot;ServerPrerendered&quot; /&gt;
+Render the razor component directly in a view
+<br />
+<code>&lt;component type=&quot;typeof(Message)&quot; render-mode=&quot;ServerPrerendered&quot; /&gt;</code>
 <br />
 
-@* You can use an Orchard shape tag helper, to render an Orchard Core shape *@
-
+@* You can now add your Blazor components on any view or razor page that references the Blazor Enabled Module *@
 <component type="typeof(Message)" render-mode="ServerPrerendered" />
+
+<code>&lt;component type=&quot;typeof(Counter)&quot; render-mode=&quot;ServerPrerendered&quot; /&gt;</code>
+<br/>
 
 <component type="typeof(Counter)" render-mode="ServerPrerendered" />

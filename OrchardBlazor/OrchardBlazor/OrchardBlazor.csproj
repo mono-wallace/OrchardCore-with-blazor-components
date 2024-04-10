@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OrchardCore.Modules\BlazorEnabledModule\BlazorEnabledModule.csproj" />
     <ProjectReference Include="..\OrchardCore.Themes\MyTheme.OrchardBlazor\MyTheme.OrchardBlazor.csproj" />
   </ItemGroup>
 
